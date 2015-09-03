@@ -1,0 +1,263 @@
+/*===========================================================
+/ 1 - General Styles                                        /
+/ 2 - Splash Screen 										/
+
+
+===========================================================*/
+
+
+/*======================================
+ 1  - General Styles
+=======================================*/
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	line-height:24px;
+	/*background-color: #566471;*/
+	background-color:  #fff;
+	color: #000;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+a {
+	outline: none !Importnat;
+}
+.nopl {
+	padding-left: 0;
+}
+.nopr {
+	padding-right: 0;
+}
+.nopadding {
+	padding:  0;
+}
+
+
+@media all and (max-width: 750px) {
+/*======================================
+ 2  - Splash Screen
+=======================================*/
+
+.splash-row {
+  position: relative;
+}
+
+.splash-logo {
+ width: 431px;
+	height: 122px;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;	
+	margin: auto;
+}
+
+/*======================================
+ 3  - Homepage 
+=======================================*/
+.home-slider > .carousel-inner > .item > .container > .carousel-caption {
+	 width: 328px;
+	height: 251px;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;	
+	margin: auto;
+	background-size: inherit !important;
+}
+.home-slider .carousel-indicators {
+	bottom: 170px;
+}
+.home-slider {
+	position: relative;
+}
+.registerhere {
+	 background-color: #fbc52b;
+    bottom: 0;
+    color: #fff;
+    font-size: 30px;
+    height: 140px;
+    line-height: 140px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+
+}
+
+.login-button a {
+	position: absolute;
+	top: 60px; 
+	right: 25px;
+	width: 163px;
+	height: 72px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 36px;
+	text-transform: uppercase;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	display: block;
+	line-height: 68px;
+}
+
+/*======================================
+ 3  - Login Page
+=======================================*/
+.login-header-sec {
+	background-image: url('../images/login-cover-img.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+}
+
+.login-header h3 {
+	font-size: 30px;
+	color:  #fff;
+	text-align: center;
+	font-weight: 600;
+}
+.backarrow {
+	position: relative;
+	margin-top: 20px;
+}
+.social-media-logins {
+	text-align: center;
+	margin-top: 70px;
+}
+.social-media-logins a {
+    background-color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 23px;
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 498px;
+    text-decoration: none;
+    color: #333333;
+}
+.social-media-logins a i { 
+	margin-right: 10px;
+	color: #fbc62d;
+	font-size: 30px;
+	position: relative;
+	top: 3px;
+}
+
+.login-form-sec {
+	padding: 120px 0;
+}
+.login-field {
+	font-size: 30px;
+	height: 55px;
+	border: none;
+	border-bottom: 1px solid #333333;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	box-shadow: none;
+	
+}
+.login-form-row {
+	padding: 0 80px;
+}
+.custom-form-group {
+	margin-bottom: 60px;
+}
+.custom-form-group .form-control::-moz-placeholder {
+	color:  #333333;
+}
+.custom-form-group .form-group {
+	position: relative;
+}
+.custom-form-group .form-control:focus{
+	box-shadow: none;
+}
+.customicon {
+	height: 55px;
+	line-height: 55px;
+	font-size: 40px !important;
+}
+.custom-form-group .forgot {
+	color: #b5b5b5;
+	font-size: 30px;
+	text-decoration: none;
+}
+.login-button {
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	border-radius: 0;
+	border: none;
+	background-color: #fbc52e;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 600;
+	color: #fff;
+}
+.login-button:hover {
+	color: #fff;
+}
+
+}
+
+@media all and (max-width: 414px) {
+
+.registerhere img {
+    display: inline-block;
+    padding: 8px;
+    width: 33px;
+}
+
+.registerhere {
+    height: 68px;
+    line-height: 68px;
+    font-size: 15px;
+}
+.home-slider .carousel-indicators {
+	bottom: 68px;
+}
+
+.login-button a {
+
+    font-size: 18px;
+    font-weight: 600;
+    height: 37px;
+    line-height: 31px;
+    top: 30px;
+    width: 103px;
+}
+.social-media-logins a {
+	width: 100%;
+}
+.login-form-row {
+	padding: 0; 
+}
+.login-header-sec {
+	padding: 70px 0;
+}
+.splash-logo img {
+	width: 100%;
+}
+.splash-logo {
+	width: 270px;
+
+}
+
+.home-slider > .carousel-inner > .item > .container > .carousel-caption {
+	width: 135px;
+}
+
+}

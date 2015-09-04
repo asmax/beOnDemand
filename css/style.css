@@ -1,7 +1,8 @@
 /*===========================================================
 / 1 - General Styles                                        /
-/ 2 - Splash Screen 										/
-
+/ 2 - Media Query (max-screen: 750px)						/
+/ 3 - Media Query (max-screen: 414px)    					/
+/ 4 - Media Query (max-screen: 360px)    					/
 
 ===========================================================*/
 
@@ -26,7 +27,7 @@ html {
     height: 100%;
 }
 a {
-	outline: none !Importnat;
+	outline: none !important;
 }
 .nopl {
 	padding-left: 0;
@@ -38,12 +39,10 @@ a {
 	padding:  0;
 }
 
-
-@media all and (max-width: 750px) {
 /*======================================
- 2  - Splash Screen
+ 1 - Media Query (max-screen: 750px)
 =======================================*/
-
+@media all and (max-width: 750px) {
 .splash-row {
   position: relative;
 }
@@ -59,9 +58,6 @@ a {
 	margin: auto;
 }
 
-/*======================================
- 3  - Homepage 
-=======================================*/
 .home-slider > .carousel-inner > .item > .container > .carousel-caption {
 	 width: 328px;
 	height: 251px;
@@ -111,9 +107,6 @@ a {
 	line-height: 68px;
 }
 
-/*======================================
- 3  - Login Page
-=======================================*/
 .login-header-sec {
 	background-image: url('../images/login-cover-img.jpg');
 	background-repeat: no-repeat;
@@ -122,7 +115,7 @@ a {
 }
 
 .login-header h3 {
-	font-size: 30px;
+	font-size: 36px;
 	color:  #fff;
 	text-align: center;
 	font-weight: 600;
@@ -163,11 +156,12 @@ a {
 	font-size: 30px;
 	height: 55px;
 	border: none;
-	border-bottom: 1px solid #333333;
+	border-bottom: 1px solid #c0c0c0;
 	border-radius: 0;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
 	box-shadow: none;
+	padding-left: 0;
 	
 }
 .login-form-row {
@@ -211,8 +205,415 @@ a {
 	color: #fff;
 }
 
+.signup-header-sec {
+	background-color: #fbc52e;
+	padding:  70px 0;
+}
+.signup-form-bg {
+	background-image: url('../images/sign-up-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+}
+.signup-form-bg .login-form-row .social-media-logins a {
+	width: 100%;
+}
+.signup-form-cover .custom-form-group input {
+	background-color: transparent;
+	color: #fff;
+	border-bottom: 1px solid #fff;
 }
 
+.signup-form-cover .custom-form-group .form-control::-moz-placeholder {
+	color:  #ffffff;
+}
+.custom-form-group a.help-ico {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.signup-logo {
+	text-align: center;
+	padding: 70px 0; 
+}
+
+.header-sec {
+	 background-color: #333333;
+    padding: 40px 0 25px;
+    position: relative;
+    z-index: 5;
+}
+.header-title h3{
+	font-size: 38px;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+
+}
+
+.verification-note {
+	font-size: 30px;
+	text-align: center;
+	line-height: 36px;
+	padding: 0 70px; 
+}
+.verificaton-form-sec {
+	padding: 50px 0;
+}
+.verifiytitle h2 {
+	text-transform: uppercase;
+	color: #fbc52e;
+	font-weight: 600;
+	text-align: center;
+	font-size: 36px;
+	margin: 80px 0;
+}
+.verification-dots ul {
+	margin: 0;
+}
+.verification-dots ul li  {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border: 1px solid #999999;
+	display: inline-block;
+	margin: 0 10px;	
+
+}
+.verification-dots ul li.active {
+	background-color: #333333;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;	
+}
+.verification-dots ul li.active a {
+	border: 1px solid #333333;
+}
+.verification-dots {
+	text-align: center;
+}
+
+.add-role-btn a {
+     color: #fbc52e;
+    float: right;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 69px;
+    text-decoration: none;
+}
+.workexperience-title, .workexperience-single-box  {
+	border-bottom: 1px solid #c0c0c0;
+	 padding-bottom: 10px;
+	 font-weight: 600;
+}
+.workexperience-title h2 {
+	font-weight: 600;
+}
+
+.workexperience-single-box h4 { 
+	font-size: 30px;
+	font-weight: 600;
+	margin: 15px 0 5px 0;
+}
+.workexperience-single-box p {
+	font-size: 18px;
+}
+.edit-icon {
+	margin-top: 25px;
+	text-align: right;
+}
+
+
+.skills-title, .skills-single-box  {
+	 padding-bottom: 10px;
+	 margin-top: 30px;
+	 font-weight: 600;
+}
+.skills-title h2 {
+	font-weight: 600;
+}
+.skills-single-box {
+	background-color: #333333;
+	color: #fff;
+	position: relative;
+	margin: 0 2px 2px 0;
+	 width: 33.13%;
+}
+.skills-single-box:nth-child(3n) {
+	margin-right: 0;
+}
+
+.skills-single-box h3 {
+	text-align: center;
+	color: #fff;
+	line-height: 84px;
+	height: 84px;
+	margin: 0;
+}
+.clos-skill {
+	position: absolute;
+	top: 7px;
+	right: 18px;
+	font-size: 18px;
+	font-weight: 300;
+	color: #ffffff;
+	text-decoration: none;
+}
+.clos-skill:hover {
+	color: #fff;
+	text-decoration: none;
+}
+#switch-handleWidth {
+	width: 100%;
+}
+.status {
+	margin: 25px 0;
+}
+
+.bootstrap-switch {
+	width: 100% !important;
+}
+.status-title {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 68px;
+}
+.status-points ul {
+	border-bottom: 1px solid #cdcdcd;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+}
+.status-points ul li {
+	list-style-type: none; 
+	font-size: 24px;
+	font-weight: 600;
+	position: relative;
+	padding-left: 25px;
+}
+.status-points ul li:before {
+	position: absolute;
+	content: '';
+	width: 13px;
+	height: 13px;
+	background-color: #FBC52E;
+	top: 5px;
+	left: 0;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+.status-points ul li span {
+	display: inline-block;
+	margin-left: 28px;
+	margin-right: 28px;
+}
+.next-btn {
+	background-color: #fbc52e;
+    border: medium none;
+    border-radius: 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    height: 110px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    line-height: 100px;
+    margin-bottom: 60px;
+}
+.next-btn:hover {
+	color: #fff;
+} 
+.next-btn img {
+	width: 25px;
+}
+.tell-us-icon {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.custom-form-group i {
+	position: absolute;
+	top: 12px;
+	left: 10px;
+	font-size: 30px;
+}
+.location-field {
+	padding-left: 35px;
+}
+.custom-form-group label,  .custom-form-group textarea {
+	font-size: 30px;
+	font-weight: 400;
+	border-bottom: 1px solid #c0c0c0;
+	width: 100%;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.custom-form-group textarea {
+	padding: 10px;
+}
+.next-btn-cover {
+	margin-top: 30px;
+}
+
+/* radio button styleing */
+.segmented {
+  border: 1px solid #FBC52E; 
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  overflow: hidden;
+}
+.segmented input[type=radio] {
+   display: none;
+   
+}
+.segmented label {
+  padding: 2px 16px;
+  margin-right: -4px;
+  background: #fff;
+    cursor: pointer;
+    width: 33.33%;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    height: 70px;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+
+.segmented input:checked + label {
+  border: none;   
+  background: #FBC52E;
+  margin-bottom: 0;
+  color: #fff;
+
+}
+.customsegmented {
+	border: 2px solid #FBC52E;
+}
+
+.customsegmented label {
+	width: 50%;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+  
+.add-skill:not(.checked) {
+    background: rgba(0, 0, 0, 0) url("../images/add-skill.png") no-repeat scroll 50% 50%;
+    height: 42px;
+    position: absolute;
+    right: 12px;
+    top: 46px;
+    width: 42px;
+    display: block;
+}
+
+
+.add-skill.checked {
+   background: url('../images/checked.png') no-repeat scroll 50% 50% ;
+    height: 42px;
+    position: absolute;
+     right: 12px;
+    top: 46px;
+    width: 42px;
+    display: block;
+}
+
+
+.choose-skills ul {
+	margin: 0;
+	padding: 0;
+}
+.choose-skills ul li {
+	list-style-type:  none;
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #c0c0c0;
+	font-size: 30px;
+}
+.counter-skill {
+	padding: 60px 0;
+	font-size: 30px;
+	text-align: center;
+}
+
+.profile-top-sec {
+	background-color: #fbc52e;
+	padding: 60px 0 0 0;
+}
+.profilepic {
+        border: 3px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 141px;
+    margin-top: -126px;
+    overflow: hidden;
+    position: relative;
+    width: 141px;
+}
+.profile-name {
+	width: 100%;
+	text-align: center;
+	font-size: 33px;
+	font-weight: 600;
+	color: #fff;
+	padding: 20px 0;
+}
+.profile-des p {
+	font-size: 25px;
+	font-weight: normal;
+	text-align: center;
+	line-height: 36px;
+	color: #333333;
+}
+.pric-cover {
+	font-size: 24px;
+	color: #fff;
+	background-color: rgba(0,0,0,.05);
+}
+.prof-price, .prof-location {
+    line-height: 85px;
+    text-align: left;
+    padding-left: 15px;
+    position: relative;
+}
+.prof-price:before {
+	 background-color: rgba(255, 255, 255, 0.2);
+    content: "";
+    height: 50px;
+    left: 0;
+    position: absolute;
+    top: 20px;
+    width: 1px;
+}
+.prof-location {
+	text-align: right;
+	padding-right: 15px;
+}
+
+.check-availability {
+	padding: 20px 0;
+	border-top: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 600;
+	margin-top: 20px;
+}
+.view-calan a.calander-view {
+	color: #fbc944;
+	text-decoration: none;
+}
+
+}
+/*======================================
+ 1 - Media Query (max-screen: 414px)
+=======================================*/
 @media all and (max-width: 414px) {
 
 .registerhere img {
@@ -258,6 +659,258 @@ a {
 
 .home-slider > .carousel-inner > .item > .container > .carousel-caption {
 	width: 135px;
+}
+.custom-form-group .forgot, .login-field, .social-media-logins a {
+	font-size: 18px;
+}
+.login-button {
+	font-size: 20px;
+}
+
+.btn.login-button > img {
+    margin-left: 7px;
+    width: 23px;
+}
+.signup-logo > img {
+    width: 120px;
+}
+.signup-header-sec {
+	padding: 50px;
+}
+
+.header-title h3 {
+	font-size: 28px;
+}
+.workexperience-title h2 {
+	font-size: 24px;
+}
+.workexperience-single-box h4 {
+	font-size: 24px;
+}
+
+.skills-single-box {
+	width: 49.5% ;
+}
+.skills-single-box:nth-child(3n) {
+	margin-right: 2px;
+}
+.skills-single-box:nth-child(2n) {
+	margin-right: 0;
+}
+.status-title, .check-avability {
+	width: 100%;
+
+}
+.customsegmented label {
+	font-size: 20px;
+}
+.status-points ul li span {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.next-btn {
+	line-height: 50px;
+	height: 60px;
+	font-size: 25px;
+}
+
+.profile-des p {
+    color: #333333;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.check-availability {
+	font-size: 14px;
+
+}
+.mobile-none {
+	display: none;
+}
+.customsegmented label {
+	width: 50%;
+}
+.custom-form-group label {
+	font-size: 18px;
+}
+
+.segmented label {
+    font-size: 18px;
+    height: 43px;
+    line-height: 38px;
+    padding: 2px 8px;
+    width: 33.33%;
+}
+.skills-title h2 {
+	font-size: 18px;
+}
+.add-role-btn {
+	width: 100%;
+}
+.add-role-btn a {
+	font-size: 16px;
+}
+.skills-title .col-xs-4 {
+	width: 100%;
+}
+.pull-left > img {
+    margin-left: 11px;
+    width: 24px;
+}
+.choose-skills ul li {
+	font-size: 20px;
+}
+.add-skill:not(.checked), .add-skill.checked {
+	background-size: 50%;
+	right: 0;
+    top: 23px;
+}
+.choose-skills ul li {
+	padding-bottom: 15px;
+	padding-top: 30px;
+}
+.counter-skill {
+	font-size: 24px;
+}
+.skills-single-box h3 {
+     font-size: 18px;
+    height: 61px;
+    line-height: 73px;
+ }
+
+
+
+}
+
+/*======================================
+ 1 - Media Query (max-screen: 360px)
+=======================================*/
+@media all and (max-width: 360px) {
+.header-title h3 {
+	font-size: 21px;
+}
+.workexperience-title h2 {
+	font-size: 18px;
+}
+.workexperience-single-box h4 {
+	font-size: 18px;
+}
+
+.skills-single-box {
+	width: 100% ;
+}
+.skills-single-box:nth-child(3n) {
+	margin-right: 2px;
+}
+.skills-single-box:nth-child(2n) {
+	margin-right: 2px;
+}
+.skills-single-box:nth-child(n) {
+	margin-right: 0;
+}
+.status-title, .check-avability {
+	width: 100%;
+
+}
+.customsegmented label {
+	font-size: 14px;
+	line-height: 41px;
+	height: 46px;
+}
+.status-points ul li span {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.next-btn {
+	line-height: 50px;
+	height: 60px;
+	font-size: 18px;
+}
+.status-points ul li::before {
+	top: 10px;
+}
+.skills-single-box h3 {
+    color: #fff;
+    font-size: 18px;
+    height: 58px;
+    line-height: 69px;
+    margin: 0;
+    text-align: center;
+}
+.col-xs-2.edit-icon img {
+    width: 23px;
+}
+.form-cover .col-xs-6 {
+	width: 100%;
+}
+.custom-form-group {
+	margin-bottom: 20px;
+}
+.custom-form-group label, .custom-form-group textarea {
+	font-size: 18px;
+}
+.segmented label {
+    font-size: 14px;
+    height: 48px;
+    line-height: 43px; 
+    width: 33.33%;
+    padding: 2px 8px;
+}
+.skills-title h2 {
+	font-size: 18px;
+}
+.add-role-btn {
+	width: 100%;
+}
+.add-role-btn a {
+	font-size: 16px;
+}
+.skills-title .col-xs-4 {
+	width: 100%;
+}
+.pull-left > img {
+    margin-left: 11px;
+    width: 24px;
+}
+.choose-skills ul li {
+	font-size: 20px;
+}
+.add-skill:not(.checked), .add-skill.checked {
+	background-size: 50%;
+	right: 0;
+    top: 23px;
+}
+.choose-skills ul li {
+	padding-bottom: 15px;
+	padding-top: 30px;
+}
+.counter-skill {
+	font-size: 24px;
+}
+
+.profile-des p {
+    color: #333333;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.check-availability {
+	font-size: 14px;
+
+}
+.mobile-none {
+	display: none;
+}
+.customsegmented label {
+	width: 50%;
 }
 
 }

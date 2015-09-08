@@ -1,18 +1,21 @@
 function Varify(LoginForm) {
-	url = 'http://beondemand.db.asmex.com.au/index.php/Login/hassam@asmex.com.au/Asmex1';
-	var result = '';
 
+	var username = LoginForm.Username.value;
+	var Password= LoginForm.Password.value;
+
+	
+	url = "http://beondemand.db.asmex.com.au/index.php/Login/"+username+"/"+Password;	
+	var result = '';
 	$.ajax({
 		url         : url,
 		method         : 'POST',
 		dataType     : 'json',
 		success     : function( data ){
-			console.log(data);
 			window.location.href = "/home.html";
 		},
 		error         : function( a, b, c ){
-			console.log( 'AN ERROR HAPPENED' );
-			console.log(a, b, c);
+			alert("Please enter right Username and Password");
+			console.log( 'AN ERROR HAPPENED' );			
 			window.location.href = "/login.html";
 		}
 	});
